@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Student Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>StudentHub Portal</h1>
+    <p>Central Campus Management Portal | CHARUSAT FTE</p>
+  </header>
+
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="profile.html" class="active">Profile</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Student Profile</h2>
+      <p>View and update your academic and contact details.</p>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="prof_enroll">Enrollment Number:</label>
+          <input type="text" id="prof_enroll" value="24IT045" readonly style="background:#eee;">
+        </div>
+
+        <div class="form-group">
+          <label for="prof_name">Student Full Name:</label>
+          <input type="text" id="prof_name" name="prof_name" value="Rahul Patel" required>
+        </div>
+
+        <div class="form-group">
+          <label for="prof_email">Email Address:</label>
+          <input type="email" id="prof_email" name="prof_email" value="24it045@charusat.edu.in" required>
+        </div>
+
+        <div class="form-group">
+          <label for="prof_phone">Contact Number:</label>
+          <input type="tel" id="prof_phone" name="prof_phone" value="9876543210" required>
+        </div>
+
+        <div class="form-group">
+          <label for="prof_dept">Department:</label>
+          <input type="text" id="prof_dept" value="Information Technology" readonly style="background:#eee;">
+        </div>
+
+        <div class="form-group">
+          <label for="prof_address">Current Address:</label>
+          <textarea id="prof_address" name="prof_address" rows="3">Hostel Block B, Room 102, CHARUSAT Campus, Changa.</textarea>
+        </div>
+
+        <button type="submit">Save Changes</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026-27 StudentHub Portal &bull; Faculty of Technology and Engineering, CHARUSAT.</p>
+  </footer>
+
+</body>
+</html>

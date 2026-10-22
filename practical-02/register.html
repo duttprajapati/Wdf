@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Student Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>StudentHub Portal</h1>
+    <p>Central Campus Management Portal | CHARUSAT FTE</p>
+  </header>
+
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="register.html" class="active">Register</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>New Student Registration</h2>
+      <p>Please fill out this accessible registration form to create your student account.</p>
+
+      <form action="#" method="post" aria-labelledby="form-heading">
+        <h3 id="form-heading">Account Information</h3>
+
+        <div class="form-group">
+          <label for="fullname">Full Name: <span aria-hidden="true">*</span></label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Rahul Patel" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">College Email: <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" placeholder="e.g. 24it001@charusat.edu.in" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Mobile Number: <span aria-hidden="true">*</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="course">Academic Program: <span aria-hidden="true">*</span></label>
+          <select id="course" name="course" required>
+            <option value="">-- Select Course --</option>
+            <option value="btech_it">B.Tech - Information Technology</option>
+            <option value="btech_cse">B.Tech - Computer Science</option>
+            <option value="btech_ec">B.Tech - Electronics & Comm.</option>
+            <option value="bca">BCA - Computer Applications</option>
+            <option value="mca">MCA - Master of Computer Applications</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="semester">Current Semester: <span aria-hidden="true">*</span></label>
+          <select id="semester" name="semester" required>
+            <option value="1">1st Semester</option>
+            <option value="2">2nd Semester</option>
+            <option value="3" selected>3rd Semester</option>
+            <option value="4">4th Semester</option>
+            <option value="5">5th Semester</option>
+            <option value="6">6th Semester</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Create Password: <span aria-hidden="true">*</span></label>
+          <input type="password" id="password" name="password" minlength="6" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm_password">Confirm Password: <span aria-hidden="true">*</span></label>
+          <input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms" style="display:inline; font-weight:normal;">
+            I agree to the college rules and terms of service.
+          </label>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026-27 StudentHub Portal &bull; Faculty of Technology and Engineering, CHARUSAT.</p>
+    <p><a href="login.html">Already registered? Log in here</a></p>
+  </footer>
+
+</body>
+</html>

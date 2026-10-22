@@ -1,0 +1,182 @@
+/* Basic Beginner CSS for Practical 2 - Semantic HTML5 & Accessibility */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f8f9fa;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 15px 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 14px;
+  color: #ccd9e8;
+}
+
+nav {
+  background-color: #002244;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #ff9900;
+  color: #000000;
+}
+
+/* Main Container */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Sections & Articles */
+section {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #003366;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #222222;
+  margin: 10px 0;
+}
+
+article {
+  background-color: #fdfdfd;
+  border: 1px solid #eeeeee;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+/* Aside */
+aside {
+  background-color: #eef4f9;
+  border-left: 4px solid #003366;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+/* Forms */
+form {
+  background-color: #ffffff;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  max-width: 450px;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+input[type="submit"],
+button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 9px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #002244;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #cccccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+footer a {
+  color: #ff9900;
+  text-decoration: none;
+}
