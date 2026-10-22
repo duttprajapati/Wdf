@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Aarav Sharma", "enrollment": "24IT001", "course": "B.Tech IT", "year": "2nd", "email": "24it001@charusat.edu.in", "gpa": 8.9 },
+  { "id": 2, "name": "Bhavya Patel", "enrollment": "24IT002", "course": "B.Tech IT", "year": "2nd", "email": "24it002@charusat.edu.in", "gpa": 9.2 },
+  { "id": 3, "name": "Chirag Desai", "enrollment": "24CE015", "course": "B.Tech CE", "year": "3rd", "email": "24ce015@charusat.edu.in", "gpa": 7.8 },
+  { "id": 4, "name": "Diya Joshi", "enrollment": "24CS021", "course": "B.Tech CSE", "year": "1st", "email": "24cs021@charusat.edu.in", "gpa": 8.5 },
+  { "id": 5, "name": "Eshaan Vora", "enrollment": "24IT033", "course": "B.Tech IT", "year": "2nd", "email": "24it033@charusat.edu.in", "gpa": 7.4 },
+  { "id": 6, "name": "Falguni Shah", "enrollment": "24BCA008", "course": "BCA", "year": "3rd", "email": "24bca008@charusat.edu.in", "gpa": 9.0 },
+  { "id": 7, "name": "Gaurav Mehta", "enrollment": "24IT042", "course": "B.Tech IT", "year": "3rd", "email": "24it042@charusat.edu.in", "gpa": 8.1 },
+  { "id": 8, "name": "Hiral Trivedi", "enrollment": "24MCA012", "course": "MCA", "year": "1st", "email": "24mca012@charusat.edu.in", "gpa": 8.7 },
+  { "id": 9, "name": "Ishaan Dave", "enrollment": "24CE045", "course": "B.Tech CE", "year": "4th", "email": "24ce045@charusat.edu.in", "gpa": 7.9 },
+  { "id": 10, "name": "Jhanvi Pandya", "enrollment": "24CS055", "course": "B.Tech CSE", "year": "2nd", "email": "24cs055@charusat.edu.in", "gpa": 9.4 },
+  { "id": 11, "name": "Karan Solanki", "enrollment": "24IT060", "course": "B.Tech IT", "year": "2nd", "email": "24it060@charusat.edu.in", "gpa": 7.2 },
+  { "id": 12, "name": "Lipi Parmar", "enrollment": "24BCA025", "course": "BCA", "year": "2nd", "email": "24bca025@charusat.edu.in", "gpa": 8.3 },
+  { "id": 13, "name": "Manan Bhatt", "enrollment": "24IT072", "course": "B.Tech IT", "year": "3rd", "email": "24it072@charusat.edu.in", "gpa": 8.6 },
+  { "id": 14, "name": "Neha Makwana", "enrollment": "24CS088", "course": "B.Tech CSE", "year": "3rd", "email": "24cs088@charusat.edu.in", "gpa": 8.8 },
+  { "id": 15, "name": "Om Raval", "enrollment": "24MCA030", "course": "MCA", "year": "2nd", "email": "24mca030@charusat.edu.in", "gpa": 7.6 }
+]

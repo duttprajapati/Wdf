@@ -1,0 +1,17 @@
+[
+  { "id": 1, "category": "Admissions", "question": "What are the eligibility criteria for B.Tech at FTE?", "answer": "Candidates must have passed 10+2 with Physics, Mathematics, and Chemistry with valid GUJCET or JEE Main score." },
+  { "id": 2, "category": "Admissions", "question": "Are scholarship schemes available for meritorious students?", "answer": "Yes, CHARUSAT offers merit-cum-means scholarships and government fee waivers for eligible students." },
+  { "id": 3, "category": "Academic", "question": "What is the minimum attendance requirement to appear for exams?", "answer": "Students are strictly required to maintain a minimum of 80% attendance in lectures and practical labs." },
+  { "id": 4, "category": "Academic", "question": "How can I apply for re-evaluation of exam papers?", "answer": "Submit a re-assessment request through your student portal within 7 days of results declaration." },
+  { "id": 5, "category": "Events", "question": "Can I register for multiple events on StudentHub?", "answer": "Yes, as long as the dates and timings do not conflict with each other." },
+  { "id": 6, "category": "Events", "question": "Are participation certificates provided for all workshops?", "answer": "Yes, digitally verifiable e-certificates are issued to all attendees who complete the workshop." },
+  { "id": 7, "category": "Campus", "question": "What are the college library timings?", "answer": "The central library is open from 8:30 AM to 8:30 PM on all working weekdays and Saturdays." },
+  { "id": 8, "category": "Campus", "question": "Is high-speed WiFi available across the campus hostel blocks?", "answer": "Yes, 24x7 Wi-Fi access is available for students using their institutional credentials." },
+  { "id": 9, "category": "Events", "question": "How do student teams submit entries for Hack-CHARUSAT?", "answer": "Team leads can submit GitHub repository URLs and project summaries through the event submission page." },
+  { "id": 10, "category": "Academic", "question": "Where can I view the academic calendar and holiday list?", "answer": "The academic calendar is updated under the Student Dashboard notices tab." },
+  { "id": 11, "category": "Campus", "question": "What sports facilities are accessible on campus?", "answer": "The university houses cricket grounds, football turf, tennis courts, and a multi-gymnasium." },
+  { "id": 12, "category": "Admissions", "question": "How do lateral entry admissions into 2nd year B.Tech work?", "answer": "Diploma holders can apply via ACPC lateral entry counselling based on DDCET scores." },
+  { "id": 13, "category": "Events", "question": "Is registration fee refundable in case an event is rescheduled?", "answer": "Yes, 100% refund is processed within 5 working days if an event gets cancelled by organizers." },
+  { "id": 14, "category": "Academic", "question": "How do I choose department elective subjects?", "answer": "Elective subject allotment is conducted online at the end of each preceding semester." },
+  { "id": 15, "category": "Campus", "question": "Whom should I contact in case of medical emergency on campus?", "answer": "CHARUSAT has an on-campus healthcare center and 24x7 ambulance service (Phone: 02697-265100)." }
+]

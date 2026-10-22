@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Dynamic JSON Data Viewer (Practical 6)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>StudentHub External JSON Data Explorer</h1>
+      <p>ITUE203 Practical 6: Fetch API, Search, Filter, Sort, and Client-Side Pagination</p>
+    </header>
+
+    <!-- Tab Navigation -->
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" data-type="events" role="tab">Campus Events (15)</button>
+      <button class="tab-btn" data-type="students" role="tab">Student Profiles (15)</button>
+      <button class="tab-btn" data-type="faqs" role="tab">College FAQs (15)</button>
+    </div>
+
+    <!-- Filter & Search Toolbar -->
+    <div class="toolbar">
+      <input type="text" id="searchInput" class="search-box" placeholder="🔍 Search records by keywords...">
+
+      <select id="filterSelect" class="filter-box">
+        <option value="ALL">All Categories</option>
+      </select>
+
+      <select id="sortSelect" class="sort-box">
+        <option value="default">Default Order</option>
+        <option value="asc">Sort A &rarr; Z</option>
+        <option value="desc">Sort Z &rarr; A</option>
+      </select>
+    </div>
+
+    <!-- Dynamic Rendered Content -->
+    <main id="contentList" aria-live="polite">
+      <!-- Cards rendered dynamically via js/app.js -->
+    </main>
+
+    <!-- Pagination Controls -->
+    <footer class="pagination-bar">
+      <button id="prevPageBtn" class="page-btn">&larr; Previous Page</button>
+      <span id="pageInfo" class="page-info">Page 1 of 3</span>
+      <button id="nextPageBtn" class="page-btn">Next Page &rarr;</button>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

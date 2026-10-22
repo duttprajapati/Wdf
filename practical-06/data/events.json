@@ -1,0 +1,17 @@
+[
+  { "id": 1, "title": "Hack-CHARUSAT 2026", "category": "Technical", "date": "2026-11-15", "venue": "FTE Seminar Hall", "seats": 120 },
+  { "id": 2, "title": "Web Development Bootcamp", "category": "Workshop", "date": "2026-11-18", "venue": "Computer Lab 3", "seats": 45 },
+  { "id": 3, "title": "Spandan Youth Cultural Gala", "category": "Cultural", "date": "2026-11-25", "venue": "Amphitheatre", "seats": 500 },
+  { "id": 4, "title": "Inter-Branch Cricket Cup", "category": "Sports", "date": "2026-11-28", "venue": "University Grounds", "seats": 16 },
+  { "id": 5, "title": "AI & Deep Learning Symposium", "category": "Technical", "date": "2026-12-02", "venue": "Auditorium A", "seats": 200 },
+  { "id": 6, "title": "Cyber Security & Ethical Hacking", "category": "Workshop", "date": "2026-12-05", "venue": "IT Lab 1", "seats": 50 },
+  { "id": 7, "title": "Battle of Bands: Music Fest", "category": "Cultural", "date": "2026-12-10", "venue": "Central Lawn", "seats": 350 },
+  { "id": 8, "title": "University Badminton Championship", "category": "Sports", "date": "2026-12-12", "venue": "Indoor Stadium", "seats": 32 },
+  { "id": 9, "title": "Robotics & IoT Showcase", "category": "Technical", "date": "2026-12-18", "venue": "Mechanical Concourse", "seats": 80 },
+  { "id": 10, "title": "Cloud DevOps Hands-on Lab", "category": "Workshop", "date": "2026-12-22", "venue": "Cloud Lab", "seats": 40 },
+  { "id": 11, "title": "Classical Dance Evening", "category": "Cultural", "date": "2027-01-05", "venue": "Auditorium B", "seats": 250 },
+  { "id": 12, "title": "Inter-College Table Tennis", "category": "Sports", "date": "2027-01-08", "venue": "Sports Complex", "seats": 24 },
+  { "id": 13, "title": "Full Stack React & Node Workshop", "category": "Workshop", "date": "2027-01-14", "venue": "Computer Lab 2", "seats": 60 },
+  { "id": 14, "title": "Campus Photography Exhibition", "category": "Cultural", "date": "2027-01-20", "venue": "Art Gallery FTE", "seats": 150 },
+  { "id": 15, "title": "CodeSprint Algorithm Contest", "category": "Technical", "date": "2027-01-25", "venue": "Main Computer Centre", "seats": 100 }
+]

@@ -1,0 +1,184 @@
+/* ==============================================================
+   Practical 6: JSON Rendering with Fetch API, Search & Pagination
+   ============================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f9fc;
+  color: #333333;
+  padding: 20px 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+header {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #003366;
+  font-size: 24px;
+}
+
+header p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background: #f1f5f9;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #475569;
+}
+
+.tab-btn.active {
+  background: #003366;
+  color: #ffffff;
+  border-color: #003366;
+}
+
+/* Controls Toolbar */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  background-color: #f8fafc;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: 8px 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-box {
+  flex: 2;
+  min-width: 220px;
+}
+
+.filter-box,
+.sort-box {
+  flex: 1;
+  min-width: 160px;
+}
+
+/* Content Area */
+#contentList {
+  min-height: 250px;
+}
+
+.card-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 5px solid #0056b3;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card-item h3 {
+  color: #003366;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-meta {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 12px;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Pagination Bar */
+.pagination-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.page-btn {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.page-btn:disabled {
+  background-color: #cbd5e0;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 14px;
+  color: #475569;
+  font-weight: bold;
+}
+
+/* Loading & Status Alerts */
+.loading-box {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  font-size: 16px;
+}
+
+.empty-box {
+  text-align: center;
+  padding: 30px;
+  color: #b91c1c;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 4px;
+}
