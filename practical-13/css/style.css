@@ -1,0 +1,154 @@
+/* Practical 13 AJAX & Fetch API CRUD CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #333;
+  padding: 25px;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+header {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #003366;
+  font-size: 22px;
+}
+
+/* Toast Notifications */
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.toast-success { background-color: #16a34a; }
+.toast-error { background-color: #dc2626; }
+
+/* Layout: Form on Left/Top, Table on Right/Bottom */
+.crud-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+@media (min-width: 850px) {
+  .crud-grid {
+    grid-template-columns: 320px 1fr;
+  }
+}
+
+.form-panel {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.form-panel h2 {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 6px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 7px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary { background: #0056b3; color: white; width: 100%; }
+.btn-primary:hover { background: #004085; }
+.btn-cancel { background: #94a3b8; color: white; width: 100%; margin-top: 6px; }
+
+.btn-sm-edit { background: #f59e0b; color: white; padding: 4px 8px; font-size: 11px; margin-right: 4px; }
+.btn-sm-del { background: #ef4444; color: white; padding: 4px 8px; font-size: 11px; }
+
+/* Data Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table, th, td {
+  border: 1px solid #e2e8f0;
+}
+
+th, td {
+  padding: 9px;
+  text-align: left;
+}
+
+th {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+tr:hover {
+  background-color: #f1f5f9;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  background: #e0f2fe;
+  color: #0369a1;
+}

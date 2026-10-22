@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - AJAX JSON API CRUD (Practical 13)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Toast Notification -->
+  <div id="toast" role="status"></div>
+
+  <div class="container">
+    <header>
+      <h1>StudentHub Asynchronous Event CRUD</h1>
+      <p style="color: #64748b; font-size: 13px; margin-top: 4px;">
+        Practical 13: PHP JSON API + JavaScript Fetch API (Zero Page Reloads)
+      </p>
+    </header>
+
+    <div class="crud-grid">
+      <!-- Left Column: Asynchronous Add / Edit Form -->
+      <section class="form-panel">
+        <h2 id="formTitle">Create New Event</h2>
+
+        <form id="eventForm">
+          <input type="hidden" id="eventId">
+
+          <div class="form-group">
+            <label for="title">Event Title: *</label>
+            <input type="text" id="title" required placeholder="e.g. Hackathon 2026">
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category: *</label>
+            <select id="category" required>
+              <option value="Technical">Technical</option>
+              <option value="Workshop">Workshop</option>
+              <option value="Cultural">Cultural</option>
+              <option value="Sports">Sports</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="event_date">Event Date: *</label>
+            <input type="date" id="event_date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="venue">Venue: *</label>
+            <input type="text" id="venue" required placeholder="e.g. FTE Lab 2">
+          </div>
+
+          <div class="form-group">
+            <label for="max_seats">Seats Available: *</label>
+            <input type="number" id="max_seats" min="1" value="50" required>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Short Description: *</label>
+            <textarea id="description" rows="2" required placeholder="Topics covered..."></textarea>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn btn-primary">Save Event</button>
+          <button type="button" id="cancelBtn" class="btn btn-cancel" style="display: none;">Cancel Edit</button>
+        </form>
+      </section>
+
+      <!-- Right Column: Asynchronous Table View -->
+      <section>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h2 style="font-size: 16px; color: #1e293b;">Active Events (Live REST API)</h2>
+          <small style="color: #64748b;">Instant DOM updates via Fetch API</small>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 45px;">ID</th>
+                <th>Title &amp; Venue</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Seats</th>
+                <th style="text-align: center; width: 110px;">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="eventsTableBody">
+              <!-- Rendered asynchronously by js/ajax_crud.js -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="js/ajax_crud.js"></script>
+</body>
+</html>
