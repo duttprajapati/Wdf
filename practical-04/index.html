@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - DOM Interactivity (Practical 4)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Component 1: Dismissible Notification Banner -->
+  <div class="notification-banner" id="notificationBanner" role="alert">
+    <span>📢 <strong>Notice:</strong> Registrations for Hack-CHARUSAT close on 14th November!</span>
+    <button class="banner-close-btn" id="closeBannerBtn" aria-label="Dismiss Notification">&times;</button>
+  </div>
+
+  <!-- Header with Hamburger and Theme Toggle -->
+  <header class="header-bar">
+    <div class="brand">StudentHub</div>
+    <div class="header-controls">
+      <!-- Component 2: Theme Switcher -->
+      <button class="theme-toggle-btn" id="themeToggleBtn">🌙 Dark Mode</button>
+      <!-- Component 3: Hamburger Menu Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Mobile Collapsible Navigation Menu -->
+  <nav class="nav-menu" id="navMenu">
+    <ul>
+      <li><a href="#slider-section">Featured Slider</a></li>
+      <li><a href="#modal-section">Modal Popup</a></li>
+      <li><a href="#faq-section">FAQ Accordion</a></li>
+      <li><a href="../practical-03/index.html">&larr; Practical 3</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- Component 4: Content / Event Slider -->
+    <section class="card" id="slider-section">
+      <h2>1. Campus Highlights Slider</h2>
+      <div class="slider-container">
+        <div class="slide active">
+          <h3>🏆 TechFest 2026 Hackathon</h3>
+          <p>Over 100 teams competing for Rs. 50,000 cash prize pool.</p>
+        </div>
+        <div class="slide">
+          <h3>🎭 Spandan Cultural Fiesta</h3>
+          <p>Annual singing, drama, and regional dance showcase at the amphitheater.</p>
+        </div>
+        <div class="slide">
+          <h3>⚽ Inter-Department Sports League</h3>
+          <p>Football and Cricket tournaments kicking off next Monday!</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevSlideBtn">&larr; Previous</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextSlideBtn">Next &rarr;</button>
+      </div>
+    </section>
+
+    <!-- Component 5: Modal Popup Window -->
+    <section class="card" id="modal-section">
+      <h2>2. Interactive Modal Popup</h2>
+      <p>Click the button below to trigger an accessible modal dialog box.</p>
+      <br>
+      <button class="btn-open-modal" id="openModalBtn">View Event Guidelines</button>
+
+      <!-- Modal Overlay -->
+      <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-box">
+          <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Modal">&times;</button>
+          <h3 id="modalTitle" style="margin-bottom: 10px;">Hack-CHARUSAT 2026 Guidelines</h3>
+          <ul style="padding-left: 20px; margin-bottom: 15px; font-size: 14px;">
+            <li>Teams must consist of 3 to 4 members.</li>
+            <li>All team members must carry valid CHARUSAT student ID cards.</li>
+            <li>Laptops and chargers are required. WiFi will be provided.</li>
+            <li>Submissions must be made on GitHub before the 24-hour mark.</li>
+          </ul>
+          <button class="slider-btn" onclick="document.getElementById('modalOverlay').classList.remove('active');">I Understand</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Component 6: Collapsible FAQ Accordion -->
+    <section class="card" id="faq-section">
+      <h2>3. Collapsible FAQ Accordion</h2>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>How do I register for events using StudentHub?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Simply navigate to the Events page, choose your preferred event, and click the "Register" button. Fill in your enrollment details to confirm.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Where will event participation certificates be sent?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>E-certificates will be uploaded to your student dashboard within 5 working days after the event concludes.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Can I participate in multiple events happening on the same date?</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Events with overlapping time schedules cannot be selected concurrently to avoid timetable conflicts.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="js/interactivity.js"></script>
+</body>
+</html>
