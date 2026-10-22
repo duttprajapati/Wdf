@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Responsive Dashboard</title>
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo-container">
+      <h1>StudentHub Portal</h1>
+      <p>Faculty of Technology and Engineering &bull; CHARUSAT</p>
+    </div>
+  </header>
+
+  <nav class="navbar" aria-label="Main Navigation">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events Directory</a></li>
+      <li><a href="register.html">Registration</a></li>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-wrapper">
+    <h2 class="section-title">Student Dashboard Overview</h2>
+
+    <!-- CSS Grid Auto-fit Metric Cards -->
+    <section class="dashboard-metrics">
+      <div class="metric-card">
+        <h4>Registered Events</h4>
+        <div class="metric-number">4</div>
+      </div>
+      <div class="metric-card">
+        <h4>Certificates Earned</h4>
+        <div class="metric-number">2</div>
+      </div>
+      <div class="metric-card">
+        <h4>Attendance Rate</h4>
+        <div class="metric-number">95%</div>
+      </div>
+      <div class="metric-card">
+        <h4>Current Semester</h4>
+        <div class="metric-number">3rd (IT)</div>
+      </div>
+    </section>
+
+    <!-- Responsive Table -->
+    <div class="content-box">
+      <h3>My Enrolled Events</h3>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Event Code</th>
+              <th>Event Title</th>
+              <th>Date</th>
+              <th>Venue</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TECH-201</td>
+              <td>Hack-CHARUSAT 2026</td>
+              <td>15 Nov 2026</td>
+              <td>FTE Seminar Hall</td>
+              <td><span style="color: #2b6cb0; font-weight: bold;">Confirmed</span></td>
+            </tr>
+            <tr>
+              <td>WORK-305</td>
+              <td>DevOps Masterclass</td>
+              <td>22 Nov 2026</td>
+              <td>IT Lab 2</td>
+              <td><span style="color: #ed8936; font-weight: bold;">Waitlisted</span></td>
+            </tr>
+            <tr>
+              <td>CULT-102</td>
+              <td>Spandan Youth Fest</td>
+              <td>05 Dec 2026</td>
+              <td>Amphitheatre</td>
+              <td><span style="color: #38a169; font-weight: bold;">Approved</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026-27 StudentHub Portal &bull; CHARUSAT FTE &bull; Practical 3 Responsive Design</p>
+  </footer>
+
+</body>
+</html>

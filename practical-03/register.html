@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Responsive Registration</title>
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo-container">
+      <h1>StudentHub Portal</h1>
+      <p>Faculty of Technology and Engineering &bull; CHARUSAT</p>
+    </div>
+  </header>
+
+  <nav class="navbar" aria-label="Main Navigation">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events Directory</a></li>
+      <li><a href="register.html" class="active">Registration</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-wrapper">
+    <div class="form-container">
+      <h2 style="color: #1a365d; margin-bottom: 0.5rem; text-align: center;">Student Registration Form</h2>
+      <p style="text-align: center; color: #718096; margin-bottom: 1.5rem;">Join the StudentHub community today</p>
+
+      <form action="#" method="post">
+        <!-- 2-Column Responsive Flex Row on Desktop, 1-Column on Mobile -->
+        <div class="form-row form-row-2col">
+          <div class="form-field">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="e.g. Rahul" required>
+          </div>
+          <div class="form-field">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="e.g. Patel" required>
+          </div>
+        </div>
+
+        <div class="form-row form-row-2col">
+          <div class="form-field">
+            <label for="email">College Email:</label>
+            <input type="email" id="email" name="email" placeholder="24it001@charusat.edu.in" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit number" required>
+          </div>
+        </div>
+
+        <div class="form-row form-row-2col">
+          <div class="form-field">
+            <label for="course">Course / Department:</label>
+            <select id="course" name="course" required>
+              <option value="IT">B.Tech Information Technology</option>
+              <option value="CSE">B.Tech Computer Science</option>
+              <option value="CE">B.Tech Computer Engineering</option>
+              <option value="BCA">BCA Computer Applications</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="semester">Current Semester:</label>
+            <select id="semester" name="semester" required>
+              <option value="1">1st Semester</option>
+              <option value="2">2nd Semester</option>
+              <option value="3" selected>3rd Semester</option>
+              <option value="4">4th Semester</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row form-row-2col">
+          <div class="form-field">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+          </div>
+          <div class="form-field">
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
+          </div>
+        </div>
+
+        <div class="form-row" style="margin-top: 1rem;">
+          <button type="submit" class="btn-primary" style="width: 100%;">Complete Registration</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026-27 StudentHub Portal &bull; CHARUSAT FTE &bull; Practical 3 Responsive Design</p>
+  </footer>
+
+</body>
+</html>

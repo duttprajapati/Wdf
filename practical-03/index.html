@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Responsive Home (Practical 3)</title>
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Responsive Flexbox Header -->
+  <header class="site-header">
+    <div class="logo-container">
+      <h1>StudentHub Portal</h1>
+      <p>Faculty of Technology and Engineering &bull; CHARUSAT</p>
+    </div>
+    <div>
+      <a href="register.html" class="btn-primary" style="padding: 0.4rem 1rem; font-size: 0.9rem;">Join StudentHub</a>
+    </div>
+  </header>
+
+  <!-- Responsive Flexbox Navigation -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="events.html">Events Directory</a></li>
+      <li><a href="register.html">Registration</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Responsive Container -->
+  <main class="main-wrapper">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <h2>Empowering Campus Life with Digital Connection</h2>
+      <p>Discover technical symposiums, sports leagues, and cultural festivals. Connect with your peers and build your future at FTE CHARUSAT.</p>
+      <a href="events.html" class="btn-primary">Browse All Upcoming Events</a>
+    </section>
+
+    <!-- CSS Grid Section for Events -->
+    <h2 class="section-title">Featured Campus Events (CSS Grid 3-Column Layout)</h2>
+    <section class="grid-cards">
+      <article class="card">
+        <div>
+          <span class="badge">Technical</span>
+          <h3>Hack-CHARUSAT 2026</h3>
+          <p><strong>Date:</strong> 15-16 Nov 2026</p>
+          <p><strong>Venue:</strong> FTE Seminar Hall</p>
+          <p>An exhilarating 24-hour hackathon for building full-stack web and mobile apps.</p>
+        </div>
+        <a href="register.html" class="btn-primary" style="text-align: center; margin-top: 10px;">Register Now</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="badge">Workshop</span>
+          <h3>Cloud & DevOps Masterclass</h3>
+          <p><strong>Date:</strong> 22 Nov 2026</p>
+          <p><strong>Venue:</strong> IT Lab 2</p>
+          <p>Hands-on training covering Docker containers, CI/CD pipelines, and cloud hosting.</p>
+        </div>
+        <a href="register.html" class="btn-primary" style="text-align: center; margin-top: 10px;">Register Now</a>
+      </article>
+
+      <article class="card">
+        <div>
+          <span class="badge">Cultural</span>
+          <h3>Spandan Youth Fest</h3>
+          <p><strong>Date:</strong> 05 Dec 2026</p>
+          <p><strong>Venue:</strong> University Grounds</p>
+          <p>Annual inter-college cultural festival featuring musical band battles and theatre.</p>
+        </div>
+        <a href="register.html" class="btn-primary" style="text-align: center; margin-top: 10px;">Register Now</a>
+      </article>
+    </section>
+
+    <!-- Responsive Flexbox Two-Column Layout -->
+    <div class="content-layout">
+      <div class="content-main content-box">
+        <h3>Why StudentHub?</h3>
+        <p>StudentHub is built with modern, accessible, and responsive CSS (Flexbox &amp; Grid). It ensures seamless usability across mobile phones, tablets, and high-resolution desktop displays.</p>
+        <p style="margin-top: 10px;">With automated registrations, quick status checking, and direct campus announcements, students never miss an important deadline.</p>
+      </div>
+
+      <div class="content-sidebar content-box">
+        <h3>Important Campus Notices</h3>
+        <ul style="padding-left: 20px; margin-top: 10px;">
+          <li>Exam Hall Tickets available from Monday</li>
+          <li>Library books renewal deadline: 10th Nov</li>
+          <li>Campus placement drive schedule posted</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026-27 StudentHub Portal &bull; CHARUSAT FTE &bull; Practical 3 Responsive Design</p>
+  </footer>
+
+</body>
+</html>
