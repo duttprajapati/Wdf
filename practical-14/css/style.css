@@ -1,0 +1,174 @@
+/* Practical 14 Admin Dashboard & Dynamic Menu CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #333;
+}
+
+/* Dynamic Role Navbar */
+.role-nav {
+  background-color: #0f172a;
+  color: white;
+  padding: 12px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.role-pill {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.role-pill.admin { background-color: #ef4444; color: white; }
+.role-pill.student { background-color: #10b981; color: white; }
+.role-pill.guest { background-color: #64748b; color: white; }
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-items a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-items a:hover,
+.nav-items a.active {
+  color: #38bdf8;
+}
+
+.btn-logout-small {
+  background-color: #dc2626;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn-login-small {
+  background-color: #2563eb;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* Dashboard Content */
+.dashboard-container {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+/* Statistics Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-tile {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  border-left: 5px solid #2563eb;
+}
+
+.stat-tile h3 {
+  font-size: 13px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.stat-tile .number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0f172a;
+  margin-top: 5px;
+}
+
+/* Card Sections */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  margin-bottom: 25px;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 8px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table, th, td {
+  border: 1px solid #e2e8f0;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+tr:hover {
+  background: #f8fafc;
+}
+
+/* Action button */
+.btn-action {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.btn-action:hover {
+  background-color: #1d4ed8;
+}
