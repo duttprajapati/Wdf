@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub - Student Registration with Validation (Practical 5)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <div class="form-header">
+      <h2>Student Registration Form</h2>
+      <p>ITUE203 Practical 5: Frontend Form Validation using Regular Expressions</p>
+    </div>
+
+    <!-- Success Feedback Banner -->
+    <div class="success-banner" id="successBanner" role="alert"></div>
+
+    <form id="registrationForm" novalidate>
+
+      <!-- 1. Full Name -->
+      <div class="form-group">
+        <label for="fullName">Full Name <span class="required-star">*</span></label>
+        <input type="text" id="fullName" placeholder="e.g. Rahul Patel" autocomplete="name">
+        <div class="error-message" id="nameError"></div>
+      </div>
+
+      <!-- 2. Email Address -->
+      <div class="form-group">
+        <label for="email">College Email ID <span class="required-star">*</span></label>
+        <input type="email" id="email" placeholder="e.g. 24it001@charusat.edu.in" autocomplete="email">
+        <div class="error-message" id="emailError"></div>
+      </div>
+
+      <!-- 3. Mobile Number -->
+      <div class="form-group">
+        <label for="mobile">Mobile Number (10 Digits) <span class="required-star">*</span></label>
+        <input type="tel" id="mobile" placeholder="e.g. 9876543210" maxlength="10">
+        <div class="error-message" id="mobileError"></div>
+      </div>
+
+      <!-- 4. Password -->
+      <div class="form-group">
+        <label for="password">Create Password <span class="required-star">*</span></label>
+        <input type="password" id="password" placeholder="Min. 8 characters">
+        <div class="strength-meter-container">
+          <div class="strength-bar">
+            <div class="strength-fill" id="strengthFill"></div>
+          </div>
+          <div class="strength-text" id="strengthText"></div>
+        </div>
+        <div class="error-message" id="passwordError"></div>
+      </div>
+
+      <!-- 5. Confirm Password -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password <span class="required-star">*</span></label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+        <div class="error-message" id="confirmPasswordError"></div>
+      </div>
+
+      <!-- 6. Course Selection -->
+      <div class="form-group">
+        <label for="course">Academic Course <span class="required-star">*</span></label>
+        <select id="course">
+          <option value="">-- Select Your Course --</option>
+          <option value="BTECH_IT">B.Tech - Information Technology</option>
+          <option value="BTECH_CSE">B.Tech - Computer Science</option>
+          <option value="BCA">BCA - Computer Applications</option>
+          <option value="MCA">MCA - Master of Computer Applications</option>
+        </select>
+        <div class="error-message" id="courseError"></div>
+      </div>
+
+      <!-- 7. Study Year -->
+      <div class="form-group">
+        <label>Current Year of Study <span class="required-star">*</span></label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="year" value="1st Year"> 1st Year</label>
+          <label class="radio-item"><input type="radio" name="year" value="2nd Year"> 2nd Year</label>
+          <label class="radio-item"><input type="radio" name="year" value="3rd Year"> 3rd Year</label>
+          <label class="radio-item"><input type="radio" name="year" value="4th Year"> 4th Year</label>
+        </div>
+        <div class="error-message" id="yearError"></div>
+      </div>
+
+      <!-- 8. Gender -->
+      <div class="form-group">
+        <label>Gender <span class="required-star">*</span></label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="gender" value="Male"> Male</label>
+          <label class="radio-item"><input type="radio" name="gender" value="Female"> Female</label>
+          <label class="radio-item"><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+        <div class="error-message" id="genderError"></div>
+      </div>
+
+      <!-- 9. Terms Acceptance -->
+      <div class="form-group">
+        <label class="radio-item">
+          <input type="checkbox" id="terms">
+          <span>I agree to the college portal terms, privacy policy, and code of conduct. <span class="required-star">*</span></span>
+        </label>
+        <div class="error-message" id="termsError"></div>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Registration</button>
+    </form>
+  </div>
+
+  <script src="js/validation.js"></script>
+</body>
+</html>
